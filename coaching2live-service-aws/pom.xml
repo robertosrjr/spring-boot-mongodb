@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  	<name>coaching2live-service-aws</name>
+  	<modelVersion>4.0.0</modelVersion>
+  	<artifactId>coaching2live-service-aws</artifactId>
+  	<description>Servicos da aws</description>
+  	<groupId>com.coaching2live</groupId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+  	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.2.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<aws-version>1.11.428</aws-version>
+	</properties>
+
+	<dependencyManagement>	
+		<dependencies>		
+				
+		</dependencies>			
+	</dependencyManagement>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>	
+
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk-s3</artifactId>
+		    <version>1.11.433</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.dataformat</groupId>
+		    <artifactId>jackson-dataformat-cbor</artifactId>
+		    <version>2.9.6</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<dependency>
+		    <groupId>commons-logging</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+		<dependency>
+		    <groupId>joda-time</groupId>
+		    <artifactId>joda-time</artifactId>
+		    <version>2.10</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/software.amazon.ion/ion-java -->
+		<dependency>
+		    <groupId>software.amazon.ion</groupId>
+		    <artifactId>ion-java</artifactId>
+		    <version>1.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.coaching2live</groupId>
+			<artifactId>coaching2live-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+  
+  
+</project>
